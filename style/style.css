@@ -1,0 +1,16 @@
+
+body {
+    background-color: #1e1e1e;  /* fundo escuro */
+    color: #f0f0f0;             /* texto claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Para garantir que o conteúdo não fique grudado na borda */
+  h1, p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  

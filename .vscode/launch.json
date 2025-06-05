@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Abrir sobre.html",
+        "url": "file:///c:/Users/Aluno.SN-377153/Documents/Nova%20pasta%20(4)/breezeibiza/sobre.html",
+        "webRoot": "${workspaceFolder}"
+      }
+    ]
+  }
+  
