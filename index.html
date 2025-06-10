@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
@@ -156,5 +157,397 @@
                 <article>
         </section>
     </main>
+=======
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ibiza Breeze</title>
+  
+  <!-- Importa fontes do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Reset e básicos */
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      background: #FFFFFF; /* Branco puro */
+      color: #1A3A5F; /* Azul marinho */
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    /* Header com menu */
+    header {
+      background-color: #1A3A5F; /* Azul marinho */
+      color: #F1E6D8; /* Concha */
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 5px rgba(26,58,95,0.3);
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #F1E6D8; /* Concha */
+    }
+    nav a {
+      color: #F1E6D8; /* Concha */
+      margin-left: 1.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      color: #A3C4D9; /* Azul claro */
+    }
+
+    /* Layout principal */
+    main {
+      display: flex;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+
+    /* Conteúdo principal - pratos */
+    section.content {
+      flex: 3;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+      background: #F1E6D8; /* Concha */
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(26,58,95,0.1);
+    }
+    section.content h2 {
+      font-family: 'Playfair Display', serif;
+      color: #1A3A5F; /* Azul marinho */
+      margin-bottom: 1.2rem;
+      width: 100%;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    article {
+      background: #FFFFFF; /* Branco puro */
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 7px rgba(26,58,95,0.1);
+      flex: 1 1 calc(33.333% - 1rem);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: box-shadow 0.3s ease;
+    }
+    article:hover {
+      box-shadow: 0 6px 15px rgba(26,58,95,0.2);
+    }
+    article h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #1A3A5F;
+      margin-bottom: 0.5rem;
+    }
+    article p {
+      color: #3a3a3a; /* Texto escuro mais suave */
+      line-height: 1.4;
+      font-size: 0.95rem;
+    }
+    article strong {
+      color: #1A3A5F;
+    }
+    article img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 0.8rem 0 1rem 0;
+      height: 150px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(26,58,95,0.15);
+    }
+    button {
+      background-color: #1A3A5F; /* Azul marinho */
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #F1E6D8; /* Concha */
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      align-self: flex-start;
+      font-size: 1rem;
+      margin-top: auto;
+    }
+    button:hover {
+      background-color: #A3C4D9; /* Azul claro */
+      color: #1A3A5F;
+    }
+    .texto-escondido {
+      margin-top: 0.7rem;
+      display: none;
+      font-style: italic;
+      color: #555;
+    }
+
+    /* Barra lateral */
+    aside.sidebar {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background: #F1E6D8; /* Concha */
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(26,58,95,0.1);
+    }
+    aside.sidebar h2 {
+      margin-top: 0;
+      color: #1A3A5F; /* Azul marinho */
+      border-bottom: 3px solid #A3C4D9; /* Azul claro */
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    .video-container iframe {
+      border-radius: 8px;
+      width: 100%;
+      height: 300px;
+      border: none;
+      box-shadow: 0 2px 8px rgba(26,58,95,0.15);
+    }
+
+    /* Formulário na sidebar */
+    .reservation-form {
+      color: #1A3A5F;
+    }
+    .reservation-form label {
+      display: block;
+      margin-top: 0.8rem;
+      font-weight: 700;
+      color: #1A3A5F;
+      font-size: 1rem;
+    }
+    .reservation-form input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border-radius: 6px;
+      border: 1.5px solid #D6D6D6; /* Cinza pérola */
+      font-size: 1rem;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+      font-family: 'Lato', sans-serif;
+    }
+    .reservation-form input:focus {
+      outline: none;
+      border-color: #A3C4D9; /* Azul claro */
+      box-shadow: 0 0 5px #A3C4D9;
+    }
+    .reservation-form button {
+      margin-top: 1.2rem;
+      background-color: #1A3A5F; /* Azul marinho */
+      width: 100%;
+      color: #F1E6D8; /* Concha */
+      border: none;
+      padding: 0.7rem;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-family: 'Playfair Display', serif;
+      transition: background-color 0.3s ease;
+    }
+    .reservation-form button:hover {
+      background-color: #A3C4D9; /* Azul claro */
+      color: #1A3A5F;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1A3A5F; /* Azul marinho */
+      color: #F1E6D8; /* Concha */
+      padding: 1.5rem 2rem;
+      max-width: 1200px;
+      margin: 2rem auto 2rem;
+      box-sizing: border-box;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 600;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      box-shadow: 0 3px 10px rgba(26,58,95,0.3);
+    }
+    footer nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 0.7rem;
+    }
+    footer nav a {
+      color: #F1E6D8;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    footer nav a:hover {
+      color: #A3C4D9;
+    }
+
+    /* Responsividade básica */
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+      }
+      section.content, aside.sidebar {
+        flex: none;
+        width: 100%;
+      }
+      section.content {
+        justify-content: center;
+      }
+      article {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Ibiza Breeze</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <h2>Pratos Principais</h2>
+
+      <article>
+        <h3>Carpaccio de Atum com Caviar e Vinagrete de Trufas</h3>
+        <p>Fatias finas de atum fresco, finalizadas com caviar e um toque de vinagrete de trufas.</p>
+        <p><strong>Preço:</strong> €95,00</p>
+        <img src="/imagens/prato1dnv.jpg" alt="Carpaccio de Atum" />
+        <button onclick="mostrarTexto(this)">Ver mais</button>
+        <div class="texto-escondido">
+          <p>Este prato é uma fusão da tradição britânica com o frescor do mar, servido com uma seleção de ervas aromáticas e toque cítrico. Ideal como entrada refinada.</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>Risoto de Trufas Negras com Queijo Parmesão</h3>
+        <p>Risoto cremoso infundido com trufas negras e finalizado com queijo parmesão envelhecido.</p>
+        <p><strong>Preço:</strong> €78,00</p>
+        <img src="/imagens/prato2.jpg" alt="Risoto de Trufas" />
+        <button onclick="mostrarTexto(this)">Ver mais</button>
+        <div class="texto-escondido">
+          <p>Um risoto sofisticado, perfeito para os amantes de sabores intensos e refinados.</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>Lobster Crumpets com Manteiga de Limão e Ervas</h3>
+        <p>Crumpets delicados recheados com carne de lagosta suculenta, cobertos com uma manteiga de limão e ervas frescas.</p>
+        <p><strong>Preço:</strong> €92,00</p>
+        <img src="/imagens/prato3.jpg" alt="Lobster Crumpets" />
+        <button onclick="mostrarTexto(this)">Ver mais</button>
+        <div class="texto-escondido">
+          <p>Delicioso e elegante, com equilíbrio perfeito entre sabor e textura.</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>Linguine com Lagosta e Molho de Champagne</h3>
+        <p>Massa linguine servida com pedaços de lagosta em um molho delicado de champagne.</p>
+        <p><strong>Preço:</strong> €88,00</p>
+        <img src="/imagens/linguine.jpg" alt="Linguine com Lagosta" />
+        <button onclick="mostrarTexto(this)">Ver mais</button>
+        <div class="texto-escondido">
+          <p>Uma experiência gastronômica para paladares exigentes, perfeita para ocasiões especiais.</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>Filet Mignon com Redução de Vinho Tinto e Legumes Assados</h3>
+        <p>Corte perfeito de filet mignon, acompanhado de uma redução de vinho tinto e legumes.</p>
+        <p><strong>Preço:</strong> €110,00</p>
+        <img src="/imagens/filemignon.jpg" alt="Filet Mignon" />
+        <button onclick="mostrarTexto(this)">Ver mais</button>
+        <div class="texto-escondido">
+          <p>Carne macia e saborosa, acompanhada dos melhores legumes da estação.</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>Tartar de Salmão com Abacate e Molho de Soja com Gengibre</h3>
+        <p>Cubos de salmão fresco e abacate, temperados com molho de soja e gengibre, servidos com chips crocantes.</p>
+        <p><strong>Preço:</strong> €65,00</p>
+        <img src="/imagens/tartar.jpg" alt="Tartar de Salmão" />
+        <button onclick="mostrarTexto(this)">Ver mais</button>
+        <div class="texto-escondido">
+          <p>Leve e refrescante, ideal para começar sua experiência gastronômica.</p>
+        </div>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <h2>Vídeo do Chef</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/v2dAqzIH7ks" title="Vídeo do Chef" allowfullscreen></iframe>
+      </div>
+
+      <section class="reservation-form">
+        <h2>Faça sua Reserva</h2>
+        <form>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+          <label for="data">Data</label>
+          <input type="date" id="data" name="data" required />
+
+          <button type="submit">Reservar</button>
+        </form>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+   
+    <p>© 2025 Ibiza Breeze - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrarTexto(botao) {
+      const texto = botao.nextElementSibling;
+      if (texto.style.display === 'block') {
+        texto.style.display = 'none';
+        botao.textContent = 'Ver mais';
+      } else {
+        texto.style.display = 'block';
+        botao.textContent = 'Ver menos';
+      }
+    }
+  </script>
+>>>>>>> 318a998 (Versao atualizada)
 </body>
 </html>

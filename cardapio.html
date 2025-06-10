@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ibiza Breeze - Cardápio</title>
+  <!DOCTYPE html>
+  <html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ibiza Breeze - Cardápio</title>
+    <style>
+  
+  
+  body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      background-color: #D6D6D6;
+      color: #1A3A5F;
+    }
+    header {
+      background-color: #1A3A5F;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    nav a {
+      color: #FFFFFF;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      color: #1A3A5F;
+      margin-bottom: 20px;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .categoria {
+      background-color: #B0D8D4;
+      padding: 25px 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      flex: 1 1 calc(25% - 20px);
+      max-width: calc(25% - 20px);
+      min-width: 250px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 30px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      border-bottom: 1px solid rgba(26, 58, 95, 0.25);
+      padding-bottom: 15px;
+      flex-wrap: wrap;
+    }
+    li:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .prato {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.2em;
+      color: #1A3A5F;
+    }
+    .descricao {
+      font-style: italic;
+      color: #000000;
+      font-size: 0.95em;
+      font-family: 'Lato', sans-serif;
+    }
+    .preco {
+      font-weight: 700;
+      color: #000000;
+      font-size: 1.05em;
+      font-family: 'Lato', sans-serif;
+    }
+    img {
+      width: 120px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      flex-shrink: 0;
+    }
+    footer {
+      background-color: #1A3A5F;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+    @media (max-width: 1024px) {
+      .categoria {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 600px) {
+      .categoria {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Ibiza Breeze</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+<h1>Cardápio Gourmet - Ibiza Breeze</h1>
+  <div class="menu">
+
+   
+    <div class="categoria">
+        <h2>Entradas</h2>
+        <ul>
+          <li>
+            <span class="prato">Carpaccio de Atum com Caviar e Vinagrete de Trufas</span><br>
+            <span class="descricao">Fatias finas de atum fresco, finalizadas com caviar e vinagrete de trufas.</span><br>
+            <img src="/imagens/prato1C.jpg" width="35%" alt="Carpaccio de Atum" />
+            <span class="preco">€38,00</span>
+          </li>
+          <li>
+            <span class="prato">Tartar de Salmão com Abacate e Molho de Soja com Gengibre</span><br>
+            <span class="descricao">Cubos de salmão fresco e abacate, temperados com molho de soja e gengibre.</span><br>
+            <img src="/imagens/prato2Certo.jpg" width="35%" alt="Tartar de Salmão" />
+            <span class="preco">€40,00</span>
+          </li>
+          <li>
+            <span class="prato">Ceviche de Vieiras com Leite de Tigre e Pimenta Rosa</span><br>
+            <span class="descricao">Vieiras frescas marinadas em leite de tigre com um toque de pimenta rosa.</span><br>
+            <img src="/imagens/prato3C.jpg" width="35%" alt="Ceviche de Vieiras" />
+            <span class="preco">€42,00</span>
+          </li>
+          <li>
+            <span class="prato">Terrine de Foie Gras com Geléia de Figos</span><br>
+            <span class="descricao">Terrine delicada de foie gras acompanhada de geléia artesanal de figos.</span><br>
+            <img src="/imagens/prato4C.jpg" width="35%" alt="Terrine de Foie Gras" />
+            <span class="preco">€45,00</span>
+          </li>
+        </ul>
+      </div>
+      
+    <div class="categoria">
+      <h2>Pratos Principais</h2>
+      <ul>
+        <li>
+          <span class="prato">Risoto de Trufas Negras com Queijo Parmesão</span><br>
+          <span class="descricao">Risoto cremoso com trufas negras e parmesão envelhecido.</span><br>
+          <img src="/imagens/prato1dnv.jpg" width="35%" alt="Risoto de Trufas Negras com Queijo Parmesão" />
+          <span class="preco">€42,00</span>
+        </li>
+        <li>
+          <span class="prato">Lobster Crumpets com Manteiga de Limão e Ervas</span><br>
+          <span class="descricao">Crumpets com lagosta e manteiga de limão com ervas frescas.</span><br>
+          <img src="/imagens/prato2.jpg" width="35%" alt="Lobster Crumpets com Manteiga de Limão e Ervas" />
+          <span class="preco">€45,00</span>
+        </li>
+        <li>
+          <span class="prato">Linguine com Lagosta e Molho de Champagne</span><br>
+          <span class="descricao">Linguine com lagosta ao molho delicado de champagne.</span><br>
+          <img src="/imagens/prato3.jpg" width="35%" alt="Linguine com Lagosta e Molho de Champagne" />
+          <span class="preco">€55,00</span>
+        </li>
+        <li>
+          <span class="prato">Filet Mignon com Redução de Vinho Tinto e Legumes Assados</span><br>
+          <span class="descricao">Filet mignon com redução de vinho tinto e legumes sazonais.</span><br>
+          <img src="/imagens/filemignon.jpg" width="35%" alt="Filet Mignon com Redução de Vinho Tinto e Legumes Assados" />
+          <span class="preco">€58,00</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sobremesas -->
+    <div class="categoria">
+      <h2>Sobremesas</h2>
+      <ul>
+        <li>
+          <span class="prato">Fondant de Chocolate com Sorvete de Baunilha</span><br>
+          <span class="descricao">Bolo quente com recheio de chocolate e sorvete artesanal de baunilha.</span><br>
+          <img src="/imagens/sobrem1.jpg" width="35%" alt="Fondant de Chocolate com Sorvete de Baunilha" />
+          <span class="preco">€78,00</span>
+        </li>
+        <li>
+          <span class="prato">Tarte Tatin com Chantilly de Mascarpone</span><br>
+          <span class="descricao">Tarte caramelizada de maçã com chantilly leve de mascarpone.</span><br>
+          <img src="/imagens/sobrem2.jpg" width="35%" alt="Tarte Tatin com Chantilly de Mascarpone" />
+          <span class="preco">€60,00</span>
+
+          <span class="prato">Panna Cotta de Baunilha com Coulis de Frutas Vermelhas</span><br>
+          <span class="descricao">Sobremesa cremosa de baunilha acompanhada por um coulis fresco de frutas vermelhas.</span><br>
+          <img src="/imagens/sobreM3.jpg" width="35%" alt="Panna Cotta" />
+          <span class="preco">€19,00</span>
+        </li>
+        <li>
+          <span class="prato">Mousse de Maracujá com Crocante de Castanhas</span><br>
+          <span class="descricao">Mousse leve e refrescante de maracujá, com crocante de castanhas caramelizadas.</span><br>
+          <img src="/imagens/" width="35%" alt="Mousse de Maracujá" />
+          <span class="preco">€21,00</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bebidas -->
+    <div class="categoria">
+      <h2>Bebidas</h2>
+      <ul>
+        <li>
+          <span class="prato">Vinho Branco Chardonnay Reserva</span><br>
+          <span class="descricao">Vinho branco encorpado, ideal para harmonizar com frutos do mar.</span><br>
+          <img src="/imagens/Firefly_Vinho Branco Chardonnay Reserva faça como se fosse real em um restaurante beira mar 178649.jpg" width="35%" alt="Vinho Branco Chardonnay Reserva" />
+          <span class="preco">€28,00</span>
+        </li>
+        <li>
+          <span class="prato">Champagne Brut Premier Cru</span><br>
+          <span class="descricao">Champagne francês de qualidade premium.</span><br>
+          <img src="/" width="35%" alt="Champagne Brut" />
+          <span class="preco">€60,00</span>
+
+          <span class="prato">Champagne Brut Premier Cru</span><br>
+      <span class="descricao">Champagne francês de qualidade premium.</span><br>
+      <img src="/imagens/champagneBrut.jpg" width="35%" alt="Champagne Brut" />
+      <span class="preco">€60,00</span>
+    </li>
+    <li>
+      <span class="prato">Coquetel Mojito Clássico</span><br>
+      <span class="descricao">Rum, hortelã fresca, açúcar, limão e água com gás, refrescante e aromático.</span><br>
+      <img src="/imagens/mojito.jpg" width="35%" alt="Coquetel Mojito" />
+      <span class="preco">€15,00</span>
+    </li>
+    <li>
+      <span class="prato">Suco Natural de Maracujá</span><br>
+      <span class="descricao">Suco fresco e natural, ideal para acompanhar qualquer prato.</span><br>
+      <img src="/imagens/sucoMaracuja.jpg" width="35%" alt="Suco de Maracujá" />
+      <span class="preco">€8,00</span>
+    </li>
+    <li>
+      <span class="prato">Espresso Italiano</span><br>
+      <span class="descricao">Café espresso forte e encorpado, servido quente.</span><br>
+      <img src="/imagens/espresso.jpg" width="35%" alt="Espresso Italiano" />
+      <span class="preco">€5,00</span>
+    </li>
+    <li>
+      <span class="prato">Água Mineral com Gás</span><br>
+      <span class="descricao">Água mineral natural com gás, refrescante.</span><br>
+      <img src="/imagens/aguaMineral.jpg" width="35%" alt="Água Mineral com Gás" />
+      <span class="preco">€4,00</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
